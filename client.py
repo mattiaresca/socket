@@ -19,4 +19,3 @@ with socket.socket(socket.AF_INET,socket.SOCK_STREAM) as s:
         data=s.recv(1024)
         #aspettiamo che il server risponda 
         print("Risultato: ", data.decode())
-        
