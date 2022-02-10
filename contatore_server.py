@@ -15,7 +15,7 @@ with socket.socket(socket.AF_INET,socket.SOCK_STREAM) as s:
         print("Connessione da ", address)
         while True:
             data=cs.recv(1024)
-            if not data: #se data è un vettore vuoto risulta false; sennò true/if len(data)==0/se è vuoto esce, sennò continua
+            if not data:  
                 break
             data=data.decode()
             data=json.loads(data)
